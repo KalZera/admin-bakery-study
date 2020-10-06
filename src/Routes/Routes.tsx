@@ -1,17 +1,17 @@
 import React, { FunctionComponent } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import { PageLogin } from "Pages";
+import { PageHome } from "Pages";
 
 export const PathsDefault = {
-  "page-login": "/login",
+  "page-home": "/",
 };
 
 export const Routes: FunctionComponent = () => {
   return (
     <Switch>
-      <Route exact path={PathsDefault["page-login"]} component={PageLogin} />
-      <Redirect to={PathsDefault["page-login"]} />
+      <Route exact path={PathsDefault["page-home"]} component={PageHome} />
+      <Redirect to={PathsDefault["page-home"]} />
     </Switch>
   );
 };
