@@ -1,12 +1,16 @@
 import React, { FunctionComponent } from "react";
-import { TableAlbuns } from "Pages/Components";
+import { TableAlbuns, AlbumInfo } from "Pages/Components";
+import { Content } from "./styles";
 
 interface Props {}
 
 export const PageHome: FunctionComponent<Props> = () => {
   return (
     <>
-      <TableAlbuns />
+      <Content>
+        <TableAlbuns />
+        <AlbumInfo />
+      </Content>
     </>
   );
 };
