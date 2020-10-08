@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
+  width: 100%;
   display: grid;
-  grid-template-columns: 0.7fr 0.3fr;
+  grid-template-columns: 70% 30%;
 `;

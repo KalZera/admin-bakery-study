@@ -12,9 +12,7 @@ export const AlbumCollection = styled.div`
   background: blue;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-content: baseline;
-  justify-content: space-between;
-  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
 `;
