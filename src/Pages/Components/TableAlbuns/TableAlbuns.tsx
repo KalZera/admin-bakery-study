@@ -1,9 +1,14 @@
 import React, { FunctionComponent } from "react";
 import { Album, AlbumCollection } from "./styled";
 
-interface Props {}
+import { Album as IAlbum } from "Services";
 
-export const TableAlbuns: FunctionComponent<Props> = () => {
+interface Props {
+  artists: IAlbum[];
+}
+
+export const TableAlbuns: FunctionComponent<Props> = ({ artists }) => {
+  console.log(artists);
   return (
     <>
       <AlbumCollection>
