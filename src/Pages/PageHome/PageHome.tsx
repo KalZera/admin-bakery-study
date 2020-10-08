@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
-import { TableAlbuns, AlbumInfo } from "Pages/Components";
-import { Content } from "./styles";
+import { TableAlbuns, AlbumInfo, ListSong } from "Pages/Components";
+import { Content, Lists, Choose } from "./styles";
 
 interface Props {}
 
@@ -8,8 +8,15 @@ export const PageHome: FunctionComponent<Props> = () => {
   return (
     <>
       <Content>
-        <TableAlbuns />
-        <AlbumInfo />
+        <Choose>
+          <TableAlbuns />
+          <AlbumInfo />
+        </Choose>
+        <Lists>
+          <ListSong />
+          <ListSong />
+          <ListSong />
+        </Lists>
       </Content>
     </>
   );

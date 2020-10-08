@@ -11,6 +11,7 @@ export const AlbumInfo: FunctionComponent<Props> = () => {
         <p> album de 2000</p>
         <p> banda Charlie brown Jr</p>
         <p> album Só os loucos sabem</p>
+        <p> 12 faixas</p>
       </Content>
     </>
   );
