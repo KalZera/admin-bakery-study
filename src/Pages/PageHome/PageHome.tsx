@@ -7,6 +7,7 @@ interface Props {}
 
 export const PageHome: FunctionComponent<Props> = () => {
   console.log(data);
+  // const selectedAlbum = useSelectedAlbum();
   return (
     <>
       <Content>

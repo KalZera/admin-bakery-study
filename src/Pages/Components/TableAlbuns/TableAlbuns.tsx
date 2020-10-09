@@ -8,16 +8,15 @@ interface Props {
 }
 
 export const TableAlbuns: FunctionComponent<Props> = ({ artists }) => {
-  console.log(artists);
   return (
     <>
       <AlbumCollection>
-        <Album img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-1568449257-cd-album-japons-pop-v6-since-1995-forever-jpop-_JM&psig=AOvVaw2O5l2z8iU6L9dARmc1IJHs&ust=1602098715925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj27_nYoOwCFQAAAAAdAAAAABAD" />
-        <Album img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-1568449257-cd-album-japons-pop-v6-since-1995-forever-jpop-_JM&psig=AOvVaw2O5l2z8iU6L9dARmc1IJHs&ust=1602098715925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj27_nYoOwCFQAAAAAdAAAAABAD" />
-        <Album img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-1568449257-cd-album-japons-pop-v6-since-1995-forever-jpop-_JM&psig=AOvVaw2O5l2z8iU6L9dARmc1IJHs&ust=1602098715925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj27_nYoOwCFQAAAAAdAAAAABAD" />
-        <Album img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-1568449257-cd-album-japons-pop-v6-since-1995-forever-jpop-_JM&psig=AOvVaw2O5l2z8iU6L9dARmc1IJHs&ust=1602098715925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj27_nYoOwCFQAAAAAdAAAAABAD" />
-        <Album img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-1568449257-cd-album-japons-pop-v6-since-1995-forever-jpop-_JM&psig=AOvVaw2O5l2z8iU6L9dARmc1IJHs&ust=1602098715925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj27_nYoOwCFQAAAAAdAAAAABAD" />
-        <Album img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-1568449257-cd-album-japons-pop-v6-since-1995-forever-jpop-_JM&psig=AOvVaw2O5l2z8iU6L9dARmc1IJHs&ust=1602098715925000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj27_nYoOwCFQAAAAAdAAAAABAD" />
+        {artists.map((album) => (
+          <Album key={album.year} img={album.photo} />
+        ))}
+        <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
+        <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
+        <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
       </AlbumCollection>
     </>
   );

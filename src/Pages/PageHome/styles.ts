@@ -4,7 +4,7 @@ export const Content = styled.div`
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 60%;
+  grid-template-rows: 450px 1fr;
 `;
 
 export const Lists = styled.div`
@@ -13,7 +13,7 @@ export const Lists = styled.div`
 `;
 
 export const Choose = styled.div`
-  max-width: 100%;
+  max-height: 450px;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 900px 1fr;
 `;

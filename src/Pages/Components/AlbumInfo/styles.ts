@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  max-height: 450px;
+`;
 
 export const PhotoAlbum = styled.div<{ img?: string }>`
-  height: 400px;
+  height: 200px;
   max-height: 400px;
-  width: 100%;
-  margin: auto;
+  width: 200px;
+  margin: 10px auto;
   background: red;
 `;

@@ -2,9 +2,12 @@ import React, { FunctionComponent } from "react";
 
 import { Container } from "./styles";
 
-interface Props {}
+interface Props {
+  songs?: string[];
+}
 
-export const ListSong: FunctionComponent<Props> = () => {
+export const ListSong: FunctionComponent<Props> = ({ songs }) => {
+  console.log(songs);
   return (
     <>
       <Container>
