@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { TableAlbuns, AlbumInfo, ListSong } from "Pages/Components";
+import { TableAlbuns, AlbumInfo, ListSong, Arrow } from "Pages/Components";
 import { Content, Lists, Choose } from "./styles";
 import data from "db.json";
 
@@ -12,7 +12,9 @@ export const PageHome: FunctionComponent<Props> = () => {
     <>
       <Content>
         <Choose>
+          <Arrow direction="left" />
           <TableAlbuns artists={data.artists} />
+          <Arrow direction="right" />
           <AlbumInfo />
         </Choose>
         <Lists>

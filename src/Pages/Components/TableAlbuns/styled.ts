@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Album = styled.div<{ img: string }>`
+export const Album = styled.button<{ img: string }>`
   background-image: url(${(props) => props.img});
   background-size: cover;
   background-position: center;

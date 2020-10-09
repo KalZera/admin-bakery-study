@@ -17,6 +17,8 @@ export const TableAlbuns: FunctionComponent<Props> = ({ artists }) => {
         <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
         <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
         <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
+        <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
+        <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
       </AlbumCollection>
     </>
   );
