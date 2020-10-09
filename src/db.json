@@ -1,6 +1,7 @@
 {
   "artists": [
     {
+      "hashId": 1,
       "artist": "Charlie Brown Jr.",
       "album": "Só os loucos sabem",
       "year": 2000,
@@ -24,6 +25,7 @@
       ]
     },
     {
+      "hashId": 2,
       "artist": "Charlie Brown Jr.",
       "album": "O errado que deu certo",
       "year": 1996,

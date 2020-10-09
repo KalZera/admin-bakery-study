@@ -12,7 +12,12 @@ export const TableAlbuns: FunctionComponent<Props> = ({ artists }) => {
     <>
       <AlbumCollection>
         {artists.map((album) => (
-          <Album key={album.year} img={album.photo} />
+          <Album
+            type="radio"
+            key={album.hashId}
+            value={album.hashId}
+            img={album.photo}
+          />
         ))}
         <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
         <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
