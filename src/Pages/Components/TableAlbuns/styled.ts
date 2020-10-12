@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "Styles/colors";
 
 export const Album = styled.div<{ img: string }>`
   background-image: url(${(props) => props.img});
@@ -8,9 +9,8 @@ export const Album = styled.div<{ img: string }>`
   height: 100%;
   width: 100%;
 `;
-
 export const AlbumCollection = styled.div`
-  background: blue;
+  background: ${colors.primary};
   width: 900px;
   height: 450px;
   display: grid;
@@ -35,6 +35,6 @@ export const RadioButton = styled.input`
 
   //active tile styles
   &:checked + ${Album} {
-    border: 2px solid white;
+    border: 2px solid ${colors.second};
   }
 `;

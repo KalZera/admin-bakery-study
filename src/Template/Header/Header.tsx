@@ -5,7 +5,7 @@ interface Props {}
 export const Header: FunctionComponent<Props> = () => {
   return (
     <HeaderBody>
-      <h1>MusicTool</h1>
+      <h1>MusicTool - Interface</h1>
     </HeaderBody>
   );
 };

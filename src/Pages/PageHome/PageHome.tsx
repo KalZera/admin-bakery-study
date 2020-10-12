@@ -32,9 +32,7 @@ export const PageHome: FunctionComponent<Props> = () => {
       <Formik validateOnMount initialValues={initialValues} onSubmit={() => {}}>
         {({ values, setFieldValue }) => {
           const addSong = (song: Song) => {
-            console.log(song);
             const arraySongs = [...values.songsToPlay, song];
-            console.log(arraySongs);
             setFieldValue("songsToPlay", arraySongs);
           };
           return (

@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import { ListSong, ListSongsToPlay } from "Pages/Components";
+import { ListSong, ListSongsToPlay, GroupButtons } from "Pages/Components";
 import { Lists } from "./styles";
 
 import { Song } from "Services";
@@ -20,7 +20,7 @@ export const FormList: FunctionComponent<Props> = ({
     <>
       <Lists>
         <ListSong albumId={albumSelected} addSong={addSong} />
-        <div />
+        <GroupButtons />
         <ListSongsToPlay Songs={songsSelected} />
       </Lists>
     </>

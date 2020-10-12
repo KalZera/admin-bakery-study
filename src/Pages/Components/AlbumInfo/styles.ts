@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
+import { colors } from "Styles/colors";
+
 export const Content = styled.div`
   max-height: 450px;
+  background-color: ${colors.third};
 `;
 
 export const PhotoAlbum = styled.div<{ img?: string }>`
@@ -9,7 +12,6 @@ export const PhotoAlbum = styled.div<{ img?: string }>`
   max-height: 400px;
   width: 200px;
   margin: 10px auto;
-  background: red;
   background-image: url(${(props) => props.img});
   background-size: cover;
   background-position: center;

@@ -22,7 +22,7 @@ export const ListSong: FunctionComponent<Props> = ({ albumId, addSong }) => {
       <Container>
         <ListContainer>
           {Songs.map((song) => (
-            <ItemList key={song.name} onClick={() => addSong(song)}>
+            <ItemList key={Math.random()} onClick={() => addSong(song)}>
               {song.name}
             </ItemList>
           ))}
