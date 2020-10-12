@@ -6,15 +6,9 @@ export const Container = styled.div`
 
 export const ListContainer = styled.div`
   background: green;
-  display: flex;
-  flex-direction: column;
 `;
 
-export const ItemList = styled.button`
+export const ItemList = styled.div`
   background: pink;
   padding: 10px;
-
-  &:hover {
-    background: white;
-  }
 `;
