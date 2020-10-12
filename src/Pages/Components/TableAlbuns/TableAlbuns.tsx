@@ -14,8 +14,13 @@ export const TableAlbuns: FunctionComponent<Props> = ({ artists }) => {
     <>
       <AlbumCollection>
         {artists.map((album) => (
-          <InputContainer key={album.hashId}>
-            <RadioButton {...field} type="radio" value={album.hashId} />
+          <InputContainer key={album.id}>
+            <RadioButton
+              {...field}
+              type="radio"
+              value={album.id}
+              checked={album.id === parseInt(field.value)}
+            />
             <Album img={album.photo} />
           </InputContainer>
         ))}

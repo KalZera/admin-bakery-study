@@ -1,5 +1,5 @@
 export interface Album {
-  hashId: string | number;
+  id: number;
   artist: string;
   album: string;
   year: number;

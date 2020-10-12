@@ -10,4 +10,8 @@ export const PhotoAlbum = styled.div<{ img?: string }>`
   width: 200px;
   margin: 10px auto;
   background: red;
+  background-image: url(${(props) => props.img});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;

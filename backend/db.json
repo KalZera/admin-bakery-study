@@ -1,7 +1,7 @@
 {
   "artists": [
     {
-      "hashId": 1,
+      "id": 1,
       "artist": "Charlie Brown Jr.",
       "album": "Só os loucos sabem",
       "year": 2000,
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "hashId": 2,
+      "id": 2,
       "artist": "Charlie Brown Jr.",
       "album": "O errado que deu certo",
       "year": 1996,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "hashId": 3,
+      "id": 3,
       "artist": "Charlie Brown Jr.",
       "album": "Só os loucos sabem",
       "year": 2000,
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "hashId": 4,
+      "id": 4,
       "artist": "Charlie Brown Jr.",
       "album": "O errado que deu certo",
       "year": 1996,
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "hashId": 5,
+      "id": 5,
       "artist": "Charlie Brown Jr.",
       "album": "Só os loucos sabem",
       "year": 2000,
@@ -131,7 +131,7 @@
       ]
     },
     {
-      "hashId": 6,
+      "id": 6,
       "artist": "Charlie Brown Jr.",
       "album": "O errado que deu certo",
       "year": 1996,

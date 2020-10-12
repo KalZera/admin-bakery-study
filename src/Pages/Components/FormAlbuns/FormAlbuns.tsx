@@ -9,9 +9,13 @@ import { useRequest } from "Hooks";
 
 interface Props {}
 
+interface FormOptions {
+  album: number;
+}
+
 export const FormAlbuns: FunctionComponent<Props> = () => {
-  const initialValues = {
-    album: "1",
+  const initialValues: FormOptions = {
+    album: 1,
   };
 
   const [, , Artists] = useRequest(ArtistService.getArtists);
@@ -19,22 +23,9 @@ export const FormAlbuns: FunctionComponent<Props> = () => {
   if (!Artists) {
     return null;
   }
-  // const next = (submit: () => void) => (
-  //   event?: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  // ) => {
-  //   if (!!event) {
-  //     event.preventDefault();
-  //   }
-  //   submit();
-  // };
   return (
     <>
-      <Formik
-        initialValues={initialValues}
-        onSubmit={(values) => {
-          console.log(values);
-        }}
-      >
+      <Formik validateOnMount initialValues={initialValues} onSubmit={() => {}}>
         {({ values }) => {
           return (
             <Form>

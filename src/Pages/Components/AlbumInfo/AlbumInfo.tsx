@@ -1,20 +1,29 @@
 import React, { FunctionComponent } from "react";
 import { PhotoAlbum, Content } from "./styles";
+
+import { ArtistService } from "Services";
+import { useRequest } from "Hooks";
+
 interface Props {
-  albumSelected: string;
+  albumSelected: number;
 }
 
 export const AlbumInfo: FunctionComponent<Props> = ({ albumSelected }) => {
-  console.log(albumSelected);
+  const [, , Artist] = useRequest(ArtistService.get, albumSelected);
+
+  if (!Artist?.id) {
+    return null;
+  }
+
   return (
     <>
       <Content>
-        <PhotoAlbum img="" />
+        <PhotoAlbum img={Artist.photo} />
         <p> informações do disco</p>
-        <p> album de 2000</p>
-        <p> banda Charlie brown Jr</p>
-        <p> album Só os loucos sabem</p>
-        <p> 12 faixas</p>
+        <p> album de {Artist.year}</p>
+        <p> {Artist.artist}</p>
+        <p> album {Artist.album}</p>
+        <p> {Artist.songs.length} faixa(s)</p>
       </Content>
     </>
   );
