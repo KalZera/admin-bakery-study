@@ -1,17 +1,28 @@
 import React, { FunctionComponent } from "react";
 
-import { Container } from "./styles";
+import { Container, ListContainer, ItemList } from "./styles";
+
+import { ArtistService } from "Services";
+import { useRequest } from "Hooks";
 
 interface Props {
   albumId?: number;
 }
 
 export const ListSong: FunctionComponent<Props> = ({ albumId }) => {
-  console.log(albumId);
+  const [, , Songs] = useRequest(ArtistService.getSongsAlbum, albumId);
+
+  if (!Songs) {
+    return null;
+  }
   return (
     <>
       <Container>
-        <p>faixa 1 </p>
+        <ListContainer>
+          {Songs.map((song) => (
+            <ItemList key={song.name}>{song.name}</ItemList>
+          ))}
+        </ListContainer>
       </Container>
     </>
   );

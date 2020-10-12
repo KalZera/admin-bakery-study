@@ -3,3 +3,4 @@ export * from "./AlbumInfo";
 export * from "./ListSong";
 export * from "./Arrow";
 export * from "./FormAlbuns";
+export * from "./FormList";

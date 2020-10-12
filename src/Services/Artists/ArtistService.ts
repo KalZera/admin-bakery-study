@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Album } from "Services/artists.types";
+import { Album, Song } from "Services/artists.types";
 // import { Album } from "Services";
 
 const getArtists = async (): Promise<Album[]> => {
@@ -14,10 +14,10 @@ const get = async (idAlbum: number): Promise<Album> => {
   return data;
 };
 
-const getSongsAlbum = async (idAlbum: number): Promise<Album> => {
+const getSongsAlbum = async (idAlbum: number): Promise<Song[]> => {
   const Artist = await axios.get(`/artists/${idAlbum}`);
-  const { data } = Artist;
-  return data;
+  const { songs } = Artist.data;
+  return songs;
 };
 
 export const ArtistService = { getArtists, get, getSongsAlbum };

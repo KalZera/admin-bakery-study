@@ -1,7 +1,20 @@
 import React, { FunctionComponent } from "react";
 
-interface Props {}
+import { ListSong } from "Pages/Components";
+import { Lists } from "./styles";
 
-export const FormList: FunctionComponent<Props> = () => {
-  return <></>;
+interface Props {
+  albumSelected: number;
+}
+
+export const FormList: FunctionComponent<Props> = ({ albumSelected }) => {
+  return (
+    <>
+      <Lists>
+        <ListSong albumId={albumSelected} />
+        <div />
+        <div />
+      </Lists>
+    </>
+  );
 };

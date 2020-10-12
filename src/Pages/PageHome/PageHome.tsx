@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { Formik } from "formik";
 
-import { FormAlbuns, ListSong } from "Pages/Components";
-import { Content, Lists } from "./styles";
+import { FormAlbuns, FormList } from "Pages/Components";
+import { Content } from "./styles";
 
 import { ArtistService } from "Services";
 import { useRequest } from "Hooks";
@@ -31,11 +31,7 @@ export const PageHome: FunctionComponent<Props> = () => {
           return (
             <Content>
               <FormAlbuns albumSelected={values.album} />
-              <Lists>
-                <ListSong albumId={values.album} />
-                <ListSong />
-                <ListSong />
-              </Lists>
+              <FormList albumSelected={values.album} />
             </Content>
           );
         }}
