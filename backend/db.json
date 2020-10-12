@@ -1,0 +1,57 @@
+{
+  "artists": [
+    {
+      "hashId": 1,
+      "artist": "Charlie Brown Jr.",
+      "album": "Só os loucos sabem",
+      "year": 2000,
+      "photo": "https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg",
+      "songs": [
+        {
+          "name": "Só os loucos sabem",
+          "type": "music",
+          "address": "./charlie_brown_junior"
+        },
+        {
+          "name": "Te levar",
+          "type": "music",
+          "address": "./charlie_brown_junior"
+        },
+        {
+          "name": "Só por uma noite",
+          "type": "vídeo",
+          "address": "./charlie_brown_junior"
+        }
+      ]
+    },
+    {
+      "hashId": 2,
+      "artist": "Charlie Brown Jr.",
+      "album": "O errado que deu certo",
+      "year": 1996,
+      "photo": "https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg",
+      "songs": [
+        {
+          "name": "Só os loucos sabem",
+          "type": "music",
+          "address": "./charlie_brown_junior"
+        },
+        {
+          "name": "Te levar",
+          "type": "music",
+          "address": "./charlie_brown_junior"
+        },
+        {
+          "name": "Te levar",
+          "type": "music",
+          "address": "./charlie_brown_junior"
+        },
+        {
+          "name": "Só por uma noite",
+          "type": "vídeo",
+          "address": "./charlie_brown_junior"
+        }
+      ]
+    }
+  ]
+}
