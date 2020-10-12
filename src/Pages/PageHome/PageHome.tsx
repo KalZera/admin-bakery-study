@@ -1,22 +1,15 @@
 import React, { FunctionComponent } from "react";
-import { TableAlbuns, AlbumInfo, ListSong, Arrow } from "Pages/Components";
-import { Content, Lists, Choose } from "./styles";
-import data from "db.json";
+import { ListSong, FormAlbuns } from "Pages/Components";
+import { Content, Lists } from "./styles";
 
 interface Props {}
 
 export const PageHome: FunctionComponent<Props> = () => {
-  console.log(data);
   // const selectedAlbum = useSelectedAlbum();
   return (
     <>
       <Content>
-        <Choose>
-          <Arrow direction="left" />
-          <TableAlbuns artists={data.artists} />
-          <Arrow direction="right" />
-          <AlbumInfo />
-        </Choose>
+        <FormAlbuns />
         <Lists>
           <ListSong />
           <ListSong />
