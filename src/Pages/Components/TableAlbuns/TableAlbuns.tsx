@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
-import { Album, AlbumCollection } from "./styled";
+import { Album, AlbumCollection, InputContainer, RadioButton } from "./styled";
+import { useField } from "formik";
 
 import { Album as IAlbum } from "Services";
 
@@ -8,19 +9,16 @@ interface Props {
 }
 
 export const TableAlbuns: FunctionComponent<Props> = ({ artists }) => {
+  const [field] = useField("album");
   return (
     <>
       <AlbumCollection>
         {artists.map((album) => (
-          <Album
-            type="radio"
-            key={album.hashId}
-            value={album.hashId}
-            img={album.photo}
-          />
+          <InputContainer key={album.hashId}>
+            <RadioButton {...field} type="radio" value={album.hashId} />
+            <Album img={album.photo} />
+          </InputContainer>
         ))}
-        <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
-        <Album img="https://images-na.ssl-images-amazon.com/images/I/71Iw18bODyL._AC_SX425_.jpg" />
       </AlbumCollection>
     </>
   );

@@ -11,7 +11,7 @@ interface Props {}
 
 export const FormAlbuns: FunctionComponent<Props> = () => {
   const initialValues = {
-    album: "",
+    album: "1",
   };
 
   const [, , Artists] = useRequest(ArtistService.getArtists);
@@ -35,16 +35,18 @@ export const FormAlbuns: FunctionComponent<Props> = () => {
           console.log(values);
         }}
       >
-        {() => (
-          <Form>
-            <Choose>
-              <Arrow direction="left" />
-              <TableAlbuns artists={Artists} />
-              <Arrow direction="right" />
-              <AlbumInfo />
-            </Choose>
-          </Form>
-        )}
+        {({ values }) => {
+          return (
+            <Form>
+              <Choose>
+                <Arrow direction="left" />
+                <TableAlbuns artists={Artists} />
+                <Arrow direction="right" />
+                <AlbumInfo albumSelected={values.album} />
+              </Choose>
+            </Form>
+          );
+        }}
       </Formik>
     </>
   );

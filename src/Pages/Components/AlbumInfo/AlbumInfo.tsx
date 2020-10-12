@@ -1,8 +1,11 @@
 import React, { FunctionComponent } from "react";
 import { PhotoAlbum, Content } from "./styles";
-interface Props {}
+interface Props {
+  albumSelected: string;
+}
 
-export const AlbumInfo: FunctionComponent<Props> = () => {
+export const AlbumInfo: FunctionComponent<Props> = ({ albumSelected }) => {
+  console.log(albumSelected);
   return (
     <>
       <Content>

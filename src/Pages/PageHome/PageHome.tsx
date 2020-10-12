@@ -5,7 +5,6 @@ import { Content, Lists } from "./styles";
 interface Props {}
 
 export const PageHome: FunctionComponent<Props> = () => {
-  // const selectedAlbum = useSelectedAlbum();
   return (
     <>
       <Content>
