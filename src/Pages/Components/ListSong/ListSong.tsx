@@ -3,11 +3,11 @@ import React, { FunctionComponent } from "react";
 import { Container } from "./styles";
 
 interface Props {
-  songs?: string[];
+  albumId?: number;
 }
 
-export const ListSong: FunctionComponent<Props> = ({ songs }) => {
-  console.log(songs);
+export const ListSong: FunctionComponent<Props> = ({ albumId }) => {
+  console.log(albumId);
   return (
     <>
       <Container>
