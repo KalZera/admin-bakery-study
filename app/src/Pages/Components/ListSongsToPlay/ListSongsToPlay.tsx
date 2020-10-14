@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-import { Container, ListContainer, ItemList } from "./styles";
+import { Container, ListContainer, ItemList, Timer } from "./styles";
 
 import { Song } from "Services";
 
@@ -23,7 +23,7 @@ export const ListSongsToPlay: FunctionComponent<Props> = ({ Songs }) => {
     <>
       <Container>
         <ListContainer>
-          <ItemList>Duração  - {time.minutes}:{('0' + time.seconds).slice(-2) }</ItemList>
+          <Timer><p>Duração</p>  <p>{time.minutes}:{('0' + time.seconds).slice(-2) }</p></Timer>
           {Songs.map((song) => (
             <ItemList key={Math.random()}>{song.name}</ItemList>
           ))}
