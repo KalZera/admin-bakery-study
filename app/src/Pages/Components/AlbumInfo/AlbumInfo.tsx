@@ -12,7 +12,11 @@ export const AlbumInfo: FunctionComponent<Props> = ({ albumSelected }) => {
   const [, , Artist] = useRequest(ArtistService.get, albumSelected);
 
   if (!Artist?.id) {
-    return null;
+    return (
+      <Content>
+        <p> Informações do disco não foram selecionadas</p>
+      </Content>
+    );
   }
 
   return (

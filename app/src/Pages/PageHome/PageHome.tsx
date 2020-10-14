@@ -12,12 +12,11 @@ interface Props {}
 interface FormOptions {
   album: number;
   songsToPlay: Song[];
-  // songsToPlay: string[];
 }
 
 export const PageHome: FunctionComponent<Props> = () => {
   const initialValues: FormOptions = {
-    album: 1,
+    album: 0,
     songsToPlay: [],
   };
 
@@ -31,18 +30,20 @@ export const PageHome: FunctionComponent<Props> = () => {
     <>
       <Formik validateOnMount initialValues={initialValues} onSubmit={() => {}}>
         {({ values, setFieldValue }) => {
-          const FunctionsForm =  {
-          addSong:(song: Song) => {
-            const arraySongs = [...values.songsToPlay, song];
-            setFieldValue("songsToPlay", arraySongs);
-          },
-          removeAll:() => {
-            setFieldValue("songsToPlay", []);
-          },
-          removeLast:() =>{
-            values.songsToPlay.pop();
-            setFieldValue("songsToPlay", values.songsToPlay);
-          }};
+          const FunctionsForm = {
+            addSong: (song: Song) => {
+              const arraySongs = [...values.songsToPlay, song];
+              console.log(arraySongs);
+              setFieldValue("songsToPlay", arraySongs);
+            },
+            removeAll: () => {
+              setFieldValue("songsToPlay", []);
+            },
+            removeLast: () => {
+              values.songsToPlay.pop();
+              setFieldValue("songsToPlay", values.songsToPlay);
+            },
+          };
           return (
             <Content>
               <FormAlbuns albumSelected={values.album} />
