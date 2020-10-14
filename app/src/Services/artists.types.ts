@@ -10,6 +10,5 @@ export interface Album {
 export interface Song {
   name: string;
   type: string;
-  address: string;
-  link?: string;
+  duracao: string;
 }
