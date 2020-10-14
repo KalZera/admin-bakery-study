@@ -22,3 +22,4 @@ práticas abordadas nesse projeto:
 - react typescript
 - formik
 - json-server
+- git-flow
