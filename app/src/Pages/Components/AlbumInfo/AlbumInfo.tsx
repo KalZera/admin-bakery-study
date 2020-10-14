@@ -19,10 +19,10 @@ export const AlbumInfo: FunctionComponent<Props> = ({ albumSelected }) => {
     <>
       <Content>
         <PhotoAlbum img={Artist.photo} />
-        <p> informações do disco</p>
-        <p> album de {Artist.year}</p>
-        <p> {Artist.artist}</p>
-        <p> album {Artist.album}</p>
+        <p> Informações do disco</p>
+        <p> Artista (s): {Artist.artist}</p>
+        <p> Nome do Album: {Artist.album}</p>
+        <p> Lançado em {Artist.year}</p>
         <p> {Artist.songs.length} faixa(s)</p>
       </Content>
     </>

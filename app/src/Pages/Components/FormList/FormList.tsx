@@ -5,22 +5,28 @@ import { Lists } from "./styles";
 
 import { Song } from "Services";
 
+interface Functions {
+  addSong: (song:Song) =>void;
+  removeAll: () => void;
+  removeLast: () => void;
+}
+
 interface Props {
   albumSelected: number;
   songsSelected: Song[];
-  addSong: (song: Song) => void;
+  functions:Functions;
 }
 
 export const FormList: FunctionComponent<Props> = ({
   albumSelected,
   songsSelected,
-  addSong,
+  functions,
 }) => {
   return (
     <>
       <Lists>
-        <ListSong albumId={albumSelected} addSong={addSong} />
-        <GroupButtons />
+        <ListSong albumId={albumSelected} addSong={functions.addSong} />
+        <GroupButtons removeAll={functions.removeAll} removeLast={functions.removeLast}/>
         <ListSongsToPlay Songs={songsSelected} />
       </Lists>
     </>

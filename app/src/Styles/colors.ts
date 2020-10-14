@@ -5,12 +5,6 @@ export const colors = {
   // third: "#77ccf9",
   third: "#cacaca",
   brandSecond: "#6BC3AA",
-  brandThird: "#F1B44F",
   supportFirst: "#6C7F7A",
-  supportSecond: "#DEDAC7",
-  grayUnactive: "#979797",
-  grayActive: "#606060",
-  grayDisabled: "#E0E0E0",
-  orangeLight: "#e8bb97",
   white: "#FFF",
 };

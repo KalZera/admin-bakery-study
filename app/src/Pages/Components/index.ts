@@ -6,3 +6,4 @@ export * from "./FormAlbuns";
 export * from "./FormList";
 export * from "./ListSongsToPlay";
 export * from "./GroupButtons";
+export * from './Button';

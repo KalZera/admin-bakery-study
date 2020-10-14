@@ -31,17 +31,25 @@ export const PageHome: FunctionComponent<Props> = () => {
     <>
       <Formik validateOnMount initialValues={initialValues} onSubmit={() => {}}>
         {({ values, setFieldValue }) => {
-          const addSong = (song: Song) => {
+          const FunctionsForm =  {
+          addSong:(song: Song) => {
             const arraySongs = [...values.songsToPlay, song];
             setFieldValue("songsToPlay", arraySongs);
-          };
+          },
+          removeAll:() => {
+            setFieldValue("songsToPlay", []);
+          },
+          removeLast:() =>{
+            values.songsToPlay.pop();
+            setFieldValue("songsToPlay", values.songsToPlay);
+          }};
           return (
             <Content>
               <FormAlbuns albumSelected={values.album} />
               <FormList
                 albumSelected={values.album}
                 songsSelected={values.songsToPlay}
-                addSong={addSong}
+                functions={FunctionsForm}
               />
             </Content>
           );
