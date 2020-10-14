@@ -11,18 +11,23 @@ interface Props {
 }
 
 export const ListSong: FunctionComponent<Props> = ({ albumId, addSong }) => {
-  const [, , Songs] = useRequest(ArtistService.getSongsAlbum, albumId);
+  const [loading, , Songs] = useRequest(ArtistService.getSongsAlbum, albumId);
 
-  if (!Songs) {
-    return null;
+  if (loading || !Songs) {
+    return (
+      <Container>
+        <ListContainer>
+          <ItemList>Selecione uma banda</ItemList>
+        </ListContainer>
+      </Container>
+    );
   }
-
   return (
     <>
       <Container>
         <ListContainer>
-          {Songs.map((song) => (
-            <ItemList key={Math.random()} onClick={() => addSong(song)}>
+          {Songs.map((song, key) => (
+            <ItemList key={key} onClick={() => addSong(song)}>
               {song.name}
             </ItemList>
           ))}
