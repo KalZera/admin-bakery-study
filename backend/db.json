@@ -1,0 +1,448 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "artist": "Charlie Brown Jr.",
+      "album": "Imunidade musical",
+      "year": 2005,
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/4/48/Imunidade_Musical.jpg",
+      "songs": [
+        {
+          "name": "Too Fast to Live, Too Young to Die",
+          "type": "music",
+          "duracao": "0:39"
+        },
+        {
+          "name": "No Passo a Passo",
+          "type": "music",
+          "duracao": "2:27"
+        },
+        {
+          "name": "Lutar pelo Que É Meu",
+          "type": "music",
+          "duracao": "3:20"
+        },
+        {
+          "name": "É Quente",
+          "type": "music",
+          "duracao": "2:58"
+        },
+        {
+          "name": "Onde Não Existe a Paz, Não Existe o Amor",
+          "type": "music",
+          "duracao": "4:07"
+        },
+        {
+          "name": "Ela Vai Voltar (Todos os Defeitos de Uma Mulher Perfeita)",
+          "type": "music",
+          "duracao": "3:07"
+        },
+        {
+          "name": "O Mundo Explodiu Lá Fora",
+          "type": "music",
+          "duracao": "3:00"
+        },
+        {
+          "name": "Senhor do Tempo",
+          "type": "music",
+          "duracao": "3:22"
+        },
+        {
+          "name": "Liberdade Acima de Tudo",
+          "type": "music",
+          "duracao": "3:07"
+        },
+        {
+          "name": "Pra Não Dizer Que Não Falei das Flores",
+          "type": "music",
+          "duracao": "5:26"
+        },
+        {
+          "name": "Abrir Seus Olhos",
+          "type": "music",
+          "duracao": "1:57"
+        },
+        {
+          "name": "Green Goes (part. Sacramento MC's)",
+          "type": "music",
+          "duracao": "4:39"
+        },
+        {
+          "name": "I Feel So Good Today",
+          "type": "music",
+          "duracao": "4:08"
+        },
+        {
+          "name": "Peso da Batida do Errado que Deu Certo",
+          "type": "music",
+          "duracao": "2:06"
+        },
+        {
+          "name": "Aquela Paz",
+          "type": "music",
+          "duracao": "2:56"
+        },
+        {
+          "name": "Cada Cabeça Falante Tem Sua Tromba de Elefante (part. Rappin' Hood)",
+          "type": "music",
+          "duracao": "4:28"
+        },
+        {
+          "name": "Onde está o mundo bom? (Living in L.A.)",
+          "type": "music",
+          "duracao": "2:23"
+        },
+        {
+          "name": "O Nosso Blues",
+          "type": "music",
+          "duracao": "5:27"
+        },
+        {
+          "name": "O Futuro é um Labirinto pra Quem Não Sabe o que Quer",
+          "type": "music",
+          "duracao": "2:58"
+        },
+        {
+          "name": "Na Palma da Mão (o Ragga da Baixada)",
+          "type": "music",
+          "duracao": "5:19"
+        },
+        {
+          "name": "Skate Vibration",
+          "type": "music",
+          "duracao": "2:03"
+        },
+        {
+          "name": "Criando Anticorpos",
+          "type": "music",
+          "duracao": "0:53"
+        },
+        {
+          "name": "Dias de Luta, Dias de Glória",
+          "type": "music",
+          "duracao": "2:27"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "artist": "Radiohead",
+      "album": "The King of Limbs",
+      "year": 2011,
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/2/24/The_king_of_limbs.jpg",
+      "songs": [
+        {
+          "name": "Bloom",
+          "duracao": "5:15",
+          "type": "music"
+        },
+        {
+          "name": "Morning Mr Magpie",
+          "duracao": "4:41",
+          "type": "music"
+        },
+        {
+          "name": "Little by Little",
+          "duracao": "4:27",
+          "type": "music"
+        },
+        {
+          "name": "Feral",
+          "duracao": "3:13",
+          "type": "music"
+        },
+        {
+          "name": "Lotus Flower",
+          "duracao": "5:01",
+          "type": "music"
+        },
+        {
+          "name": "Codex",
+          "duracao": "4:47",
+          "type": "music"
+        },
+        {
+          "name": "Give Up the Ghost",
+          "duracao": "4:50",
+          "type": "music"
+        },
+        {
+          "name": "Separator",
+          "duracao": "5:20",
+          "type": "music"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "artist": "Radiohead",
+      "album": "Ok Computer",
+      "year": 1997,
+      "photo": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/27/Okcomputer.jpg/220px-Okcomputer.jpg",
+      "songs": [
+        {
+          "name": "Airbag",
+          "duracao": "4:44",
+          "type": "music"
+        },
+        {
+          "name": "Paranoid Android",
+          "duracao": "6:23",
+          "type": "music"
+        },
+        {
+          "name": "Subterranean Homesick Alien",
+          "duracao": "4:27",
+          "type": "music"
+        },
+        {
+          "name": "Exit Music (For a Film)",
+          "duracao": "4:24",
+          "type": "music"
+        },
+        {
+          "name": "Let Down",
+          "duracao": "4:59",
+          "type": "music"
+        },
+        {
+          "name": "Karma Police",
+          "duracao": "4:21",
+          "type": "music"
+        },
+        {
+          "name": "Fitter Happier",
+          "duracao": "1:57",
+          "type": "music"
+        },
+        {
+          "name": "Electioneering",
+          "duracao": "3:50",
+          "type": "music"
+        },
+        {
+          "name": "Climbing Up the Walls",
+          "duracao": "4:45",
+          "type": "music"
+        },
+        {
+          "name": "No Surprises",
+          "duracao": "3:48",
+          "type": "music"
+        },
+        {
+          "name": "Lucky",
+          "duracao": "4:19",
+          "type": "music"
+        },
+        {
+          "name": "The Tourist",
+          "duracao": "5:24",
+          "type": "music"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "artist": "Portishead",
+      "album": "Dummy",
+      "year": 1994,
+      "photo": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2014/08/portishead-dummy.jpg",
+      "songs": [
+        {
+          "name": "Mysterons",
+          "duracao": "5:02",
+          "type": "music"
+        },
+        {
+          "name": "Sour Times",
+          "duracao": "4:11",
+          "type": "music"
+        },
+        {
+          "name": "Strangers",
+          "duracao": "3:55",
+          "type": "music"
+        },
+        {
+          "name": "It Could Be Sweet",
+          "duracao": "4:16",
+          "type": "music"
+        },
+        {
+          "name": "Wandering Star",
+          "duracao": "4:51",
+          "type": "music"
+        },
+        {
+          "name": "It's a Fire",
+          "duracao": "3:49",
+          "type": "music"
+        },
+        {
+          "name": "Numb",
+          "duracao": "3:54",
+          "type": "music"
+        },
+        {
+          "name": "Roads",
+          "duracao": "5:02",
+          "type": "music"
+        },
+        {
+          "name": "Pedestal",
+          "duracao": "3:39",
+          "type": "music"
+        },
+        {
+          "name": "Biscuit",
+          "duracao": "5:01",
+          "type": "music"
+        },
+        {
+          "name": "Glory Box",
+          "duracao": "5:06",
+          "type": "music"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "artist": "Portshead",
+      "album": "Third",
+      "year": 2008,
+      "photo": "https://i.pinimg.com/originals/6c/ea/4d/6cea4d3cedad11780ffddf2fa803117b.jpg",
+      "songs": [
+        {
+          "name": "Silence",
+          "duracao": "4:58",
+          "type": "music"
+        },
+        {
+          "name": "Hunter",
+          "duracao": "3:57",
+          "type": "music"
+        },
+        {
+          "name": "Nylon Smile",
+          "duracao": "3:16",
+          "type": "music"
+        },
+        {
+          "name": "The Rip",
+          "duracao": "4:29",
+          "type": "music"
+        },
+        {
+          "name": "Plastic",
+          "duracao": "3:27",
+          "type": "music"
+        },
+        {
+          "name": "We Carry On",
+          "duracao": "6:27",
+          "type": "music"
+        },
+        {
+          "name": "Deep Water",
+          "duracao": "1:31",
+          "type": "music"
+        },
+        {
+          "name": "Machine Gun",
+          "duracao": "4:43",
+          "type": "music"
+        },
+        {
+          "name": "Small",
+          "duracao": "6:45",
+          "type": "music"
+        },
+        {
+          "name": "Magic Doors",
+          "duracao": "3:32",
+          "type": "music"
+        },
+        {
+          "name": "Threads",
+          "duracao": "5:45",
+          "type": "music"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "artist": "Drake",
+      "album": "Nothing was the same",
+      "year": 2014,
+      "photo": "https://jpimg.com.br/uploads/2017/11/archives/2014/12/12/2683249065-album-nothing-was-same-do-rapper-drake.png",
+      "songs": [
+        {
+          "name": "Tuscan Leather",
+          "duracao": "6:06",
+          "type": "music"
+        },
+        {
+          "name": "Furthest Thing",
+          "duracao": "4:27",
+          "type": "music"
+        },
+        {
+          "name": "Started from the Bottom",
+          "duracao": "2:53",
+          "type": "music"
+        },
+        {
+          "name": "Wu-Tang Forever",
+          "duracao": "3:37",
+          "type": "music"
+        },
+        {
+          "name": "Own It",
+          "duracao": "4:11",
+          "type": "music"
+        },
+        {
+          "name": "Worst Behavior",
+          "duracao": "4:30",
+          "type": "music"
+        },
+        {
+          "name": "From Time (featuring Jhené Aiko)",
+          "duracao": "5:22",
+          "type": "music"
+        },
+        {
+          "name": "Hold On, We're Going Home (featuring Majid Jordan)",
+          "duracao": "3:51",
+          "type": "music"
+        },
+        {
+          "name": "Connect",
+          "duracao": "4:56",
+          "type": "music"
+        },
+        {
+          "name": "The Language",
+          "duracao": " 3:44",
+          "type": "music"
+        },
+        {
+          "name": "305 to My City (featuring Detail)",
+          "duracao": "4:15",
+          "type": "music"
+        },
+        {
+          "name": "Too Much (featuring Sampha)",
+          "duracao": "4:21",
+          "type": "music"
+        },
+        {
+          "name": "Pound Cake / Paris Morton Music 2 (featuring Jay-Z)",
+          "duracao": "7:13",
+          "type": "music"
+        }
+      ]
+    }
+  ]
+}
