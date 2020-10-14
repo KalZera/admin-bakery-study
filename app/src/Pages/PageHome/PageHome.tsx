@@ -16,7 +16,7 @@ interface FormOptions {
 
 export const PageHome: FunctionComponent<Props> = () => {
   const initialValues: FormOptions = {
-    album: 0,
+    album: 1,
     songsToPlay: [],
   };
 
@@ -33,7 +33,6 @@ export const PageHome: FunctionComponent<Props> = () => {
           const FunctionsForm = {
             addSong: (song: Song) => {
               const arraySongs = [...values.songsToPlay, song];
-              console.log(arraySongs);
               setFieldValue("songsToPlay", arraySongs);
             },
             removeAll: () => {
