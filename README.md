@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Song-tool
 
-é um projeto de prática de conhecimento e estrutura em ReactJs. Em que o intuito é clonar a interfaces de jukebox, essas maquinas de música, 
+é um projeto de prática de conhecimento e estrutura em ReactJs. Em que o intuito é clonar a interface de uma jukebox, essas maquinas de música, 
 exibindo informações dos artistas e musicas escolhidas.
 
 ### `npm start`
